@@ -1,0 +1,54 @@
+.container {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.login-form {
+  width: 400px;
+  height: 500px;
+  margin: 100px auto;
+  padding: 40px;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-around;
+  align-items: center;
+  border: 1px solid $color-base;
+  border-radius: 7px;
+}
+
+.login-form-headline {
+  font-size: x-large;
+  font-weight: bold;
+  color: $white;
+}
+
+.form-input {
+  border: none;
+  background: $transparent-color;
+  border-bottom: 1px solid $color-base;
+  width: 100%;
+}
+
+.label {
+  width: 100%;
+}
+
+.forget-password {
+  align-self: start;
+  margin: 10px 0;
+  color: $primary-color;
+  text-decoration: none;
+}
+
+.form-button-login {
+  @extend .button;
+  @include button-color($primary-color, $transparent-color);
+  width: 100%;
+}
+
+.form-button-register {
+  @extend .button;
+  @include button-color($white, $primary-color);
+  width: 100%;
+}
