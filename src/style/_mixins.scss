@@ -2,3 +2,8 @@
   margin-top: 0;
   font-size: $font-size;
 }
+
+@mixin button-color($font-color, $bg-color) {
+  color: $font-color;
+  background-color: $bg-color;
+}

@@ -1,0 +1,26 @@
+.header {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 3vh 5vh;
+  border-bottom: solid 1px;
+}
+
+.navbar-ul {
+  display: flex;
+  .navbar-li {
+    padding: 0 0.5vh;
+  }
+}
+
+.footer-button-login {
+  @extend .button;
+  @include button-color($primary-color, $transparent-color);
+  width: 14vh;
+}
+
+.footer-button-register {
+  @extend .button;
+  @include button-color($white, $primary-color);
+  width: 14vh;
+}
